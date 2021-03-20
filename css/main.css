@@ -1,0 +1,147 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width:100%;
+    max-width: 1920px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .container.boxed{
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.gallery{
+    height: 100vh; 
+       display: flex; 
+       align-items: center;
+       background-color: black;
+}
+.col-data-margin{
+    border-radius: 20px;
+    padding: 50px;
+}
+.img_responsive{
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.col-25{
+    width: 25%;
+    display: flex;
+}
+
+
+.col-33{
+    width: 33.33%;
+    display: flex;
+}
+
+
+
+.col-100{
+    width: 100%;
+}
+
+
+
+
+/*
+@media only screen and (max-width:420px){
+
+    .col-25{
+        width: 100%;
+    }
+    .col-33{
+        width: 100%;
+    }
+
+}
+*/
+
+
+@media only screen and (max-width:768px){
+
+    .col-25{
+        width: 50%;
+    }
+    .col-33{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .gallery{
+        height: auto;
+    }
+    .img_responsive{
+        border: none;
+    }
+    
+    .AboutUspara{
+        padding-top: 100px;
+    }
+
+    .teamImage{
+        flex-direction: column;
+    }
+    .teamImage img{
+        width: 100%;
+}
+
+}
+.navbar div button{
+    display: none;
+}
+
+ 
+
+
+p{
+    font-size: 24px;
+}
+
+    button{
+        padding: 15px 30px 15px 30px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+    }
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+
+/*About us*/
+
+
+.AboutUspara{
+    text-align: center; 
+    color: black; 
+    padding-top: 10%;
+}
+
+.teamImage{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    height: 60vh;
+}
+
+.teamImage img{
+    width: 20%;
+}
+

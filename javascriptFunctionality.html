@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Additon Function</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container" style="position: fixed; z-index: 1;">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i><img src="images/barIcon.png" alt="" width="70%" style="margin-top: 15px;"></i>
+              </span>
+          <div class="logodiv">
+          
+              <a href="home.html" class="logo"><img src="images/logo.png" alt="Logo" width="60%;"></a>
+          </div>
+    
+            <ul class="main-nav" id="js-menu">
+             <li>
+                <a href="javascriptFunctionality.html" class="nav-links">JS Function</a>
+              </li>
+              <li>
+                <a href="gallery.html" class="nav-links">Gallery</a>
+              </li>
+              <li>
+                <a href="aboutUs.html" class="nav-links">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="nav-links">Contact</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div style="padding-top: 120px; text-align: center;">
+        <h1>Javascript Function</h1>
+        <p>This Function will show the password that <br>is in input field</p>
+        <br><br>
+        Password: <input type="password" id="myPassword" placeholder="Enter Password to see">
+        <br><br>
+        <p>Click For Password.</p>
+        <br>
+        <button onclick="myFunction()">Try it</button>
+        <br><br>
+        <p id="Output"></p>
+    </div>
+    
+    
+    <script src="js/main.js">
+        
+    </script>
+</body>
+</html>

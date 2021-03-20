@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    
+    <style>
+        
+.externalLink a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: black;
+}
+        input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    transition: 1s;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+    color: black;
+    border: solid 1px black;
+    transition: 0.5s;
+}
+    </style>
+</head>
+<body>
+   
+   
+   <div class="container" style="position: fixed; z-index: 1;">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i><img src="images/barIcon.png" alt="" width="70%" style="margin-top: 15px;"></i>
+              </span>
+          <div class="logodiv">
+          
+              <a href="home.html" class="logo"><img src="images/logo.png" alt="Logo" width="60%;"></a>
+          </div>
+    
+            <ul class="main-nav" id="js-menu">
+             <li>
+                <a href="javascriptFunctionality.html" class="nav-links">JS Function</a>
+              </li>
+              <li>
+                <a href="gallery.html" class="nav-links">Gallery</a>
+              </li>
+              <li>
+                <a href="aboutUs.html" class="nav-links">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="nav-links">Contact</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <div class="container" style="
+       height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        border-radius: 5px;
+      background-color: white;
+      padding: 100px 20px 20px 20px;">
+     
+     
+      <form action="#">
+      
+       <h1>Contact Form</h1>
+       <br>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="country">Choose a Car:</label>
+        <select id="country" name="country">
+          <option value="australia">Audi</option>
+          <option value="canada">BMW</option>
+          <option value="usa">Volco</option>
+        </select>
+
+        <input onclick="functionalert()" type="submit" value="Submit">
+        
+        <p><br>For Alert message Click on Submit button</p>
+        
+        <h3><br>Here are external links</h3><br>
+        <div class="externalLink" style="display: flex; justify-content: space-around;">
+            <a href="https://www.fiverr.com/" target="_blank">Fiverr</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+      </form>
+    </div>
+    
+    
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
